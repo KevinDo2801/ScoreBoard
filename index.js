@@ -87,7 +87,7 @@ function newGame() {
   state.scores.home = state.scores.guest = 0;
   state.fouls.home = state.fouls.guest = 0;
   state.period = 0;
-  state.timeLeft = 10;
+  state.timeLeft = minuteElementReal * 60 + secondElementReal;
 
   updateScore('home');
   updateScore('guest');
