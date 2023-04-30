@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/verdana" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="basketball">
+            <div class="team-wrapper">
+                <div class="team home">
+                    <h1>HOME</h1>
+                    <p class="score bg-black special-font main-score p-size" data-score="home">0</p>
+                    <div class="plus-score">
+                        <button class="plus special-font" data-value="1" data-team="home">+1</button>
+                        <button class="plus special-font" data-value="2" data-team="home">+2</button>
+                        <button class="plus special-font" data-value="3" data-team="home">+3</button>
+                    </div>
+                </div>
+                <div class="timer-period">
+                    <div class="timer">
+                        <div class="bg-black">
+                            <p class="minute p-size special-font">00</p>
+                        </div>
+                        <span class="special-font">:</span>
+                        <div class="bg-black">
+                            <p class="second p-size special-font">20</p>
+                        </div>
+                    </div>
+                    <div class="period">
+                        <h1>PERIOD</h1>
+                        <p class="bg-black p-size special-font">0</p>
+                    </div>
+                </div>
+                <div class="team guest">
+                    <h1>GUEST</h1>
+                    <p class="score bg-black special-font main-score p-size" data-score="guest">0</p>
+                    <div class="plus-score">
+                        <button class="plus special-font" data-value="1" data-team="guest">+1</button>
+                        <button class="plus special-font" data-value="2" data-team="guest">+2</button>
+                        <button class="plus special-font" data-value="3" data-team="guest">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="game-wrapper">
+                <div class="foul">
+                    <h1>FOULS</h1>
+                    <p class="score bg-black special-font p-size" data-foul="home">0</p>
+                </div>
+                <div class="newGame-pause">
+                    <div class="icon">
+                        <i id="new" class='fa-solid fa-arrow-rotate-left'></i>
+                        <i id="play" class="fa fa-play"></i>
+                        <i id="pause" class="fa fa-pause"></i>
+                    </div>
+                </div>
+                <div class="foul">
+                    <h1>FOULS</h1>
+                    <p class="score bg-black special-font p-size" data-foul="guest">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+:root {
+    --special-font: 'Cursed Timer ULiL', sans-serif;
+    --primary-color: #1B244A;
+    --secondary-color: #080001;
+    --score-color: #F94F6D;
+    --timer-color: rgb(193, 193, 4);
+    --period-color: green;
+    --button-color: #9aabdb;
+}
+
+body {
+    background-image: url(./basketball-court.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Verdana', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-font {
+    font-family: var(--special-font);
+}
+
+.container {
+    background-color: var(--primary-color);
+    width: 600px;
+    height: 385px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-wrapper, .game-wrapper {
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #eee;
+    margin: 0 0 10px;
+}
+
+.bg-black {
+    width: 120px;
+    height: 90px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-size {
+    color: var(--score-color);
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.plus-score {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus {
+    background-color: transparent;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.timer-period .bg-black {
+    width: 90px;
+    height: 60px;
+    margin-bottom: 0;
+}
+
+.timer {
+    display: flex;
+}
+
+.timer span {
+    font-size: 70px;
+    padding-top: 3px;
+}
+
+.timer p {
+    color: var(--timer-color);
+    font-size: 45px;
+}
+
+.period {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.period p {
+    color: var(--period-color);
+    font-size: 45px;
+}
+
+.period h1 {
+    font-size: 30px;
+}
+
+.period .bg-black {
+    width: 60px;
+}
+
+.game-wrapper {
+    border-radius: 0 0 10px 10px;
+    border-top: 0;
+    transform: translateY(-3px);
+}
+
+.foul {
+    text-align: center;
+    cursor: pointer;
+}
+
+.foul h1 {
+    font-size: 30px;
+}
+
+.foul .bg-black {
+    height: 50px;
+    width: 60px;
+}
+
+.foul p {
+    font-size: 45px;
+    color: var(--period-color);
+}
+
+.newGame-pause {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newGame-pause i {
+    font-size: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: var(--button-color);
+}
+
