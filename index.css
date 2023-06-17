@@ -1,3 +1,4 @@
+/* Setting */
 :root {
     --special-font: 'Cursed Timer ULiL', sans-serif;
     --primary-color: #1B244A;
@@ -68,12 +69,16 @@ h1 {
     color: var(--score-color);
     font-size: 70px;
     font-weight: 400;
-    margin: 0;
+    margin: 0 auto;
 }
 
+.team{
+    text-align: center;
+}
+
+/* plus */
 .plus-score {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 5px;
 }
 
 .plus {
@@ -85,6 +90,7 @@ h1 {
     cursor: pointer;
 }
 
+/* timer */
 .timer-period .bg-black {
     width: 90px;
     height: 60px;
@@ -104,7 +110,7 @@ h1 {
     color: var(--timer-color);
     font-size: 45px;
 }
-
+/* period */
 .period {
     display: flex;
     flex-direction: column;
@@ -129,7 +135,7 @@ h1 {
     border-top: 0;
     transform: translateY(-3px);
 }
-
+/* foul */
 .foul {
     text-align: center;
     cursor: pointer;
@@ -148,7 +154,7 @@ h1 {
     font-size: 45px;
     color: var(--period-color);
 }
-
+/* new game */
 .newGame-pause {
     display: flex;
     align-items: center;
